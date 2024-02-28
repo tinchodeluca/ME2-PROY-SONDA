@@ -1,0 +1,37 @@
+
+======
+|TODO|
+======
+
+Para el calculo:
+----------------
+
+O Comparacion de las mediciones nuevas con las anteriores
+  -------------------------------------------------------
+	- Ver archivo readme.txt dentro de la carpeta comparaciones.
+	- Las diferencias entre la parte real e imaginaria de ambas mediciones no superan las dos unidades.
+
+O Convertir .s1p en .csv
+  ----------------------
+	- Modificar "." por "," de los archivos .s1p para que el Excel interprete correctamente los numeros.
+	- Eliminar la linea de parametros del archivo .s1p.
+	- Importar en excel.
+	- Exportar a .csv.
+	- Eliminar la columna de frecuencias.
+	- Modificar "," por "." de los archivos .s1p para que el Matlab interprete correctamente los numeros (TTnTT)
+		- Cuando se exporta en Excel se puede setear esto en el ultimo step en Advanced.
+
+O Calculo de la nueva ecuacion para s11->e
+  ----------------------------------------
+	- ? Creo que no -> sino s11_eps_02.py y algun que otro archivo .m
+
+O Matlab s11->e
+  -------------
+	- No logra converger como en Python (mucho error tipo -2)
+
+Para la verificacion:
+--------------------
+
+X Calculo de la nueva ecuacion para s11<-e
+
+X Matlab s11<-e

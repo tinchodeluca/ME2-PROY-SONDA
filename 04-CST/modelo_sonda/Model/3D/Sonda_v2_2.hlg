@@ -1,0 +1,134 @@
+--------------------------------------------------------------------------------
+Translator Name    : Spatial InterOp Connect ( Version : 2020 1.0.1 )
+System Name        : Windows_NT
+Machine Name       : TINCHO-HOME
+User Name          : mdelu
+Source System      : SWDirect
+Destination System : ACIS
+Input File         : E:\My Drive\Facultad\Materias Facultad\MEII\Proy ME2 2023\05-CST\modelo_sonda\Model\3D\Sonda_v2_2.SLDPRT
+Output File        : E:\My Drive\Facultad\Materias Facultad\MEII\Proy ME2 2023\05-CST\modelo_sonda\Model\3D\Sonda_v2_2.sab
+Start Time         : Sun Jul  9 21:17:46 2023
+
+--------------------------------------------------------------------------------
+Message : === Translation Options ===
+Message : ProE.TranslateSheetBodies : false
+Message : IGES.TrimCurveReadPreference : 0
+Message : Step.BRep.TranslateClassIVAsTrim : false
+Message : ProE.TranslateWorkPlanes : false
+Message : SEDirect.TranslateWorkPlanes : false
+Message : CatiaV5.TranslateWorkPlanes : false
+Message : AssemblySearchPath : E:\My Drive\Facultad\Materias Facultad\MEII\Proy ME2 2023\05-CST\modelo_sonda\Model\3D
+Message : TranslateAttributes : true
+Message : ProE.DoSplineResurface : true
+Message : TranslateFreePoints : false
+Message : ProE.BRep.AllowNonManifoldTopology : true
+Message : Step.Brep.ReadScaleFactor : -1.0
+Message : ===========================
+-------------------------Source File Header Information-------------------------
+Modification Date        : 
+Last Saved Path          : E:\My Drive\Facultad\Materias Facultad\MEII\Proy ME2 2023\04-Dise*os\Sonda\Sonda_v2.SLDPRT
+File Name                : Sonda_v2_2.SLDPRT
+Source System            : Solidworks
+Version                  : SolidWorks 2016
+Document Type            : Part
+Active Configuration     : Predeterminado
+Configurations Count     : 1
+Configuration0           : Predeterminado
+Configuration ID0        : 0
+Units                    : MILLIMETER
+Format Type              : SWDirect
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Source Document Preprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Target Document Preprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Start BRep
+--------------------------------------------------------------------------------
+-------------------------Source File Header Information-------------------------
+Modification Date        : Monday, July 10, 2023 00 17 46
+File Name                : P7644.34580Sonda_v2_2.SLDPRT.ConfigID0P7644.34580.p_b
+Modeller version         : 28 0 191
+Version                  : 28 0 191
+Document Type            : Part
+Format Type              : PSDirect
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+BRep Source Representation Preprocessing Result : Method is not implemented
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+BRep Source Representation Preprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+BRep Target Representation Preprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+BRep Source Representation Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+BRep Source Representation Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+BRep Target Representation Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+End BRep
+------------------------Representation Conversion Summary-----------------------
+No. of Acorn Bodies                       :    0
+No. of Mixed Bodies                       :    0
+No. of Solid Bodies                       :    4
+No. of Wire Bodies                        :    0
+No. of Free Surfaces                      :    0
+No. of Free Curves                        :    0
+No. of Sheet Bodies                       :    0
+No. of Free Points                        :    0
+--------------------------------------------------------------------------------
+BRep Conversion Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Start DocumentFeature
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+DocumentFeature Source Representation Preprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+DocumentFeature Target Representation Preprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+DocumentFeature Source Representation Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+DocumentFeature Target Representation Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+End DocumentFeature
+------------------------Representation Conversion Summary-----------------------
+No. of Selection Sets                     :    0
+No. of Working Coordinate Systems         :    0
+No. of Associative Groups                 :    0
+No. of Layer Filters                      :    0
+--------------------------------------------------------------------------------
+DocumentFeature Conversion Result : No Entity to Translate
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Target Document Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Target Document Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+---------------------------Document Conversion Summary--------------------------
+No. of Items of DocumentFeature Representation :    0
+No. of Items of BRep Representation            :    4
+--------------------------------------------------------------------------------
+Message : Setting save mode for ACIS file based on the file extension
+Output File "E:\My Drive\Facultad\Materias Facultad\MEII\Proy ME2 2023\05-CST\modelo_sonda\Model\3D\Sonda_v2_2.sab" is Successfully Written
+--------------------------------------------------------------------------------
+Finish Time : Sun Jul  9 21:17:47 2023
+
+--------------------------------------------------------------------------------
+Translation Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------

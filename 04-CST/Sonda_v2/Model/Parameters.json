@@ -1,0 +1,29 @@
+{
+    "parameters": [
+        {
+            "descr": "Epsilon",
+            "expr": "3.5",
+            "name": "Ep",
+            "value": "3.5"
+        },
+        {
+            "descr": "Mu",
+            "expr": "1",
+            "name": "Mu",
+            "value": "1"
+        },
+        {
+            "descr": "Electric Conductivity",
+            "expr": "0",
+            "name": "EConduct",
+            "value": "0"
+        },
+        {
+            "descr": "Magnetic Conductivity",
+            "expr": "0",
+            "name": "MagConduct",
+            "value": "0"
+        }
+    ],
+    "version": 1
+}

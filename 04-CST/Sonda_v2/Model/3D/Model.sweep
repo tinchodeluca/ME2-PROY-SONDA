@@ -1,0 +1,148 @@
+{
+    "parameter sweep": {
+        "options": {
+            "restore parameter values after run": "false",
+            "simulation type": "Frequency",
+            "skip existing combinations": "true",
+            "start active solver": "true"
+        },
+        "sequences": {
+            "Agua Destilada": [
+                {
+                    "type": "arbitrary",
+                    "values": "5.55e-006",
+                    "varname": "EConduct"
+                },
+                {
+                    "type": "arbitrary",
+                    "values": "78.4",
+                    "varname": "Ep"
+                },
+                {
+                    "type": "arbitrary",
+                    "values": "0",
+                    "varname": "MagConduct"
+                },
+                {
+                    "type": "arbitrary",
+                    "values": "1",
+                    "varname": "Mu"
+                },
+                {
+                    "index": 1
+                }
+            ],
+            "Aire (Open)": [
+                {
+                    "from": "0",
+                    "samples": "1",
+                    "to": "0",
+                    "type": "linear",
+                    "varname": "MagConduct"
+                },
+                {
+                    "from": "1",
+                    "samples": "1",
+                    "to": "1",
+                    "type": "linear",
+                    "varname": "Mu"
+                },
+                {
+                    "type": "arbitrary",
+                    "values": "0",
+                    "varname": "EConduct"
+                },
+                {
+                    "type": "arbitrary",
+                    "values": "1.00059",
+                    "varname": "Ep"
+                },
+                {
+                    "index": 3
+                }
+            ],
+            "Cobre": [
+                {
+                    "type": "arbitrary",
+                    "values": "1",
+                    "varname": "Mu"
+                },
+                {
+                    "type": "arbitrary",
+                    "values": "5.96e+007",
+                    "varname": "EConduct"
+                },
+                {
+                    "type": "arbitrary",
+                    "values": "0",
+                    "varname": "MagConduct"
+                },
+                {
+                    "type": "arbitrary",
+                    "values": "1",
+                    "varname": "Ep"
+                },
+                {
+                    "index": 2
+                }
+            ],
+            "PLA": [
+                {
+                    "from": "0",
+                    "samples": "1",
+                    "to": "0",
+                    "type": "linear",
+                    "varname": "MagConduct"
+                },
+                {
+                    "from": "1",
+                    "samples": "1",
+                    "to": "1",
+                    "type": "linear",
+                    "varname": "Mu"
+                },
+                {
+                    "type": "arbitrary",
+                    "values": "0",
+                    "varname": "EConduct"
+                },
+                {
+                    "type": "arbitrary",
+                    "values": "2.71",
+                    "varname": "Ep"
+                },
+                {
+                    "index": 4
+                }
+            ],
+            "Resina": [
+                {
+                    "type": "arbitrary",
+                    "values": "0",
+                    "varname": "EConduct"
+                },
+                {
+                    "type": "arbitrary",
+                    "values": "3.5",
+                    "varname": "Ep"
+                },
+                {
+                    "type": "arbitrary",
+                    "values": "0",
+                    "varname": "MagConduct"
+                },
+                {
+                    "from": "1",
+                    "samples": "1",
+                    "to": "1",
+                    "type": "linear",
+                    "varname": "Mu"
+                },
+                {
+                    "index": 5
+                }
+            ]
+        },
+        "version": 1
+    }
+}

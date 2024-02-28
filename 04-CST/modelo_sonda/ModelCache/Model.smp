@@ -1,0 +1,24 @@
+With MeshSettings
+     With .ItemMeshSettings ("solid$default:DUT")
+          .SetMeshType "All" 
+          .Set "Transform", "1", "0", "0", "0", "-1.83697e-16", "1", "0", "-1", "-1.83697e-16" 
+     End With
+End With
+With MeshSettings
+     With .ItemMeshSettings ("solid$default:PTFE")
+          .SetMeshType "All" 
+          .Set "Transform", "1", "0", "0", "0", "-1.83697e-16", "1", "0", "-1", "-1.83697e-16" 
+     End With
+End With
+With MeshSettings
+     With .ItemMeshSettings ("solid$default:conn_ext")
+          .SetMeshType "All" 
+          .Set "Transform", "1", "0", "0", "0", "-1.83697e-16", "1", "0", "-1", "-1.83697e-16" 
+     End With
+End With
+With MeshSettings
+     With .ItemMeshSettings ("solid$default:conn_in")
+          .SetMeshType "All" 
+          .Set "Transform", "1", "0", "0", "0", "-1.83697e-16", "1", "0", "-1", "-1.83697e-16" 
+     End With
+End With

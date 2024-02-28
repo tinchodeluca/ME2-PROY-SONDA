@@ -1,0 +1,54 @@
+1xN031:  >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+         2023 Jul 11 (Tue):  19:30:20
+         >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1xN031:  ==========================================================================
+          - pinning rule in use   : PINNING_RULE_MCALC_SKIP_ALL
+          - desired group         : 0, sockets = 0
+          - num cores available   : 16
+          - num accessible procs          : 16
+          - num logical procs             : 16
+          - affinity (main thread)        : 11111111 11111111 
+          - sockets                       : 0
+          - potential cores               : 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+          - affinity                      : 1111111111111111
+          - active cores          : 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+          - hyperthreading        : on
+          - skip pinning: + allowed number of sockets = available number of sockets
+                          + hyperthreading allowed by solver
+         ==========================================================================
+
+1xN031:  Version: 2021.1 Release from 2020-11-10 (change 826605) [Release]
+         Started @ 2023 Jul 11 (Tue):  19:30:20
+         Workflow: PBA matrix coefficients
+         Operation: [fpba, meshfill, bg, port-path, tst, tst-nextgen, coeff, surface-imp, connectivity-tree]
+         Architecture: Windows, ID: AMD64
+         System Windows-64bit
+         Using processor group 0/1
+         HEX Mesh information:
+         [Global mesh]
+         	global O(0 0 133) 	global S(95 95 7) Z(63174)
+         [Extended mesh]
+         	extended O(0 0 132) 	extended S(95 95 8) Z(72199)
+1xN031:  ================================
+         Matrix computation (PBA)
+         	[PBA version: default]
+         Version 2021.1 (build 20201110)
+         PBA version 2020111021
+         Sub-Workflow: FARM-1xN-TST2-Node
+         Workflow updated: -
+         2023 Jul 11 (Tue):  19:30:20
+         ================================
+
+1xN031:  ----------------------------------------------
+         Used point accuracy enhancement value: 75.00%.
+         ----------------------------------------------
+
+1xN031:  FARM allocation scheme: BBM
+1xN031:  Gap-Detection activated for FARM-topology. Gaps are resolved, even partially.: gap tolerance value is 0.001 and mesh geometry scale is 0.001
+1xN031:  
+         
+         
+
+1xN031:  
+1xN031:  Port homogenization method: M2H point index deviation

@@ -1,0 +1,29 @@
+{
+   "execution": {
+      "classname": "SMAPowerByEmagHPCFrame",
+      "libname": "SMAPowerByEmagUI"
+   },
+   "inputVariables": [
+      {
+         "name": "Ep",
+         "type": "float",
+         "value": 3.5
+      },
+      {
+         "name": "Mu",
+         "type": "float",
+         "value": 1.0
+      },
+      {
+         "name": "EConduct",
+         "type": "float",
+         "value": 0.0
+      },
+      {
+         "name": "MagConduct",
+         "type": "float",
+         "value": 0.0
+      }
+   ],
+   "outputVariables": []
+}

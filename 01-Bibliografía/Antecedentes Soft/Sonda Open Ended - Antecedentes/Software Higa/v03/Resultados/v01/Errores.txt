@@ -1,0 +1,63 @@
+python: s11_eps_01.py (con conector)
+Matlab: -.
+
+AGUA 25
+=======
+354 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+356 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+357 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+359 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+361 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+
+AGUA 30
+=======
+354 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+356 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+
+AGUA 35
+=======
+349 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+354 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+356 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+357 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+
+AGUA 40
+=======
+354 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+356 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+
+AGUA 50
+=======
+354 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+356 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+
+AGUA 55
+=======
+351 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+355 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+362 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+
+AGUA 60
+=======
+352 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+356 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.

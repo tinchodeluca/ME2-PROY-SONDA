@@ -1,0 +1,25 @@
+AGUA 25 (es 79)
+=======
+354 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+356 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+359 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+
+AGUA 40 (es 70)
+=======
+354 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+356 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+
+AGUA 60 (es 60)
+=======
+352 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+356 The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+
+#352<f<#359 falla
+f = #356 (2,5GHz) siempre falla

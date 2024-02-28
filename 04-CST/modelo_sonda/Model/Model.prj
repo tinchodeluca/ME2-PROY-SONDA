@@ -1,0 +1,21 @@
+[Version]
+2
+[ProjectVersion]
+'# MWS Version: Version 2021.1 - Nov 10 2020 - ACIS 30.0.1 -
+[Author]
+mdelu
+[Mesh Cells]
+1,228,204
+[Mesh Type]
+Hexahedral
+[Last Problem Type]
+High Frequency
+[Last Solver Type]
+HF Time Domain
+[Last Solver Type Abb]
+t
+[Results]
+Time Domain: S-Parameter
+[Modeler Unique ID]
+5:modelo_sonda.cst?3689e71289d5576c41ea8ceee13075ec?14333:numberofparameters=0:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0::sonda_v2_2.sab>cd06d694eb4b4cedd9513de5f829a30b>38152?sonda_v2_1.sab>ad4d95f53642c962eeefc88e813cf8dc>27003
+[Comment]

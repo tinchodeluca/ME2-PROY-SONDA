@@ -1,0 +1,182 @@
+11/Jul/2023 19:24:01  Build version: 2021.1 Release from 2020-11-10 (change 826605)
+
+11/Jul/2023 19:24:01  Starting adaptive port meshing.
+                      
+                      ------------------------------------------------------------------------------
+11/Jul/2023 19:24:01  Mode calculation for port 1:
+                      
+                      ------------------------------------------------------------------------------
+
+                      ------------------------------------------------------------------------------
+
+                      ------------------------------------------------------------------------------
+11/Jul/2023 19:24:05  Using generalized port mode solver.
+                      
+                      ------------------------------------------------------------------------------
+11/Jul/2023 19:24:06  Port mode solver: Detected dispersive material(s) at port 1. 
+                      Using a constant approximation of dispersive material(s) at 5 GHz and neglecting loss terms.  More...
+                      
+                      ------------------------------------------------------------------------------
+11/Jul/2023 19:24:06    --------------------------------- F-Calc 5 ---------------------------------
+                        Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+                        1      1      TEM         260           5.27e-006     39.3          0.0
+                        ----------------------------------------------------------------------------
+                      
+11/Jul/2023 19:24:07  Pass 1 successfully completed. 
+
+                      ------------------------------------------------------------------------------
+
+                      ------------------------------------------------------------------------------
+11/Jul/2023 19:24:14    --------------------------------- F-Calc 5 ---------------------------------
+                        Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+                        1      1      TEM         260           5.80e-006     39.2          0.0
+                        ----------------------------------------------------------------------------
+                      
+11/Jul/2023 19:24:15  Pass 2 successfully completed. Delta (Line Imp.): 0.41%
+
+                      ------------------------------------------------------------------------------
+
+                      ------------------------------------------------------------------------------
+11/Jul/2023 19:24:26    --------------------------------- F-Calc 5 ---------------------------------
+                        Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+                        1      1      TEM         260           0.128         39.1          0.0
+                        ----------------------------------------------------------------------------
+                      
+11/Jul/2023 19:24:27  Pass 3 successfully completed. Delta (Line Imp.): 0.04%
+11/Jul/2023 19:24:27  Mode calculation for port 2:
+                      
+                      ------------------------------------------------------------------------------
+
+                      ------------------------------------------------------------------------------
+
+                      ------------------------------------------------------------------------------
+11/Jul/2023 19:24:38  Using generalized port mode solver.
+                      
+                      ------------------------------------------------------------------------------
+11/Jul/2023 19:24:38  Automatically activated electric shielding for port 2.
+                      
+                      ------------------------------------------------------------------------------
+11/Jul/2023 19:24:38  Port mode solver: Detected dispersive material(s) at port 2. 
+                      Using a constant approximation of dispersive material(s) at 5 GHz and neglecting loss terms.  More...
+                      
+                      ------------------------------------------------------------------------------
+11/Jul/2023 19:24:40    --------------------------------- F-Calc 5 ---------------------------------
+                        Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+                        2      1      TE          43.2          9.56e-007     ---           0.8464
+                        ----------------------------------------------------------------------------
+                      
+11/Jul/2023 19:24:41  Pass 1 successfully completed. 
+11/Jul/2023 19:24:41  Adaptive port meshing finished. 
+                      
+                      ------------------------------------------------------------------------------
+11/Jul/2023 19:24:42  
+                      Solver started at: 07:24 PM Tuesday, 11. July 2023 (Argentina Standard Time)
+                      
+                        Module:  Time Domain: S-Parameter (Win 64)
+                        Version: 2021.1 Release from 2020-11-10 (change 826605)
+                      
+
+                      ------------------------------------------------------------------------------
+
+                      ------------------------------------------------------------------------------
+11/Jul/2023 19:24:42  ======================================================================
+                       Solver cycle: 1
+                      ======================================================================
+                      
+                      Stimulation at port 1 (mode 1) 
+                      
+                      
+                      
+                      ------------------------------------------------------------------------------
+11/Jul/2023 19:24:42  Units settings: 
+                      
+                        Dimensions: mm
+                        Frequency:  GHz
+                        Time:       ns
+                      
+                      ------------------------------------------------------------------------------
+11/Jul/2023 19:25:21  Mesh statistics:
+                      
+                         Hexahedral mesh type: PBA [Version: default]
+                      
+                         Parallelization type: none
+                      
+                         Used point accuracy enhancement value: 75.00%.
+                         PBA fill limit: 85.00% (inverse)
+                         The first three mesh cells within the region of port 1 seem to be inhomogeneously filled (at least slightly). Matrix coefficient calculation continues creating a homogeneously filled port region for the simulation setup.
+
+                         *** Error ***  Port 1 is inhomogeneously filled within the first 3 mesh cells. Cannot start solver.
+
+                         *** Error ***  Error while running matrix calculator: ExH: CST exception, Msg: Error while running port homogenizer., Hint:  n/a
+
+                         *** Error ***  Error while running port homogenizer.
+
+                         *** Error ***  Error in calculating solver matrix
+
+
+11/Jul/2023 19:25:22  
+                      --------------------------------------------------------------------------------
+11/Jul/2023 19:25:22  *** Warning ***
+                      
+11/Jul/2023 19:25:22  Solver run aborted.
+                      
+                      ------------------------------------------------------------------------------
+11/Jul/2023 19:25:22  Frequency domain results unnormalized.
+                      
+                      
+                      ------------------------------------------------------------------------------
+11/Jul/2023 19:25:22  
+                        ----------------------------------------------------------------------------
+                                            Peak memory used (kB)         Free physical memory (kB) 
+                                                                          At begin     Minimum      
+                        ----------------------------------------------------------------------------
+                        Matrices calc.      0                             0            0            
+                        Solver run total    22380                         26461348     25426592     
+                        ----------------------------------------------------------------------------
+                      
+                      --------------------------------------------------------------------------------
+                      Solver Statistics:
+                      
+                        Hardware:
+                           Computer name:                 	Tincho-Home 
+                      
+                           Number of CPU threads:               8
+                           Hardware info:                  	Hardware Accelerator Device not activated
+                      
+                        Number of mesh cells:             	1228204
+                        Excitation duration:              	0.00000000e+000 ns 
+                        Calculation time for excitation:  	0 	s
+                        Number of calculated pulse widths:	0 
+                        Simulated number of time steps:   	0 
+                        Maximum number of time steps:     	0 
+                        Time step width:
+                           without subcycles:             	0.000000000e+000 ns
+                           used:                          	0.000000000e+000 ns
+                      
+                        Matrix calculation time:          	0 	s
+                        Solver setup time:                	0 	s
+                        Solver loop time:                 	0 	s
+                        Solver post-processing time:      	0 	s
+                                                          	------------
+                        Total solver time:                	0 	s
+                      
+                      ------------------------------------------------------------------------------
+11/Jul/2023 19:25:22  
+                        Adaptive port meshing time:          	44     	s
+                        Total solver time (all cycles):      	0      	s
+                        solver initialization and clean-up:  	40     	s
+                                                             	------------
+                        Total simulation time:               	84     	s  ( = 0 h, 1 m, 24 s )
+                      
+                      ------------------------------------------------------------------------------
+11/Jul/2023 19:25:22  Solver finished at: 07:25 PM Tuesday, 11. July 2023
+                      
+                      
+                      
+                      ------------------------------------------------------------------------------
+11/Jul/2023 19:30:04  Line impedance adaptation results found. Adaptive port meshing skipped.
+                      
+                      ------------------------------------------------------------------------------
+11/Jul/2023 19:34:55  Line impedance adaptation results found. Adaptive port meshing skipped.
+                      
+                      ------------------------------------------------------------------------------

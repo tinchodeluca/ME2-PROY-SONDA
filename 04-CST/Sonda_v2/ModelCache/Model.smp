@@ -1,0 +1,24 @@
+With MeshSettings
+     With .ItemMeshSettings ("solid$default:import_1")
+          .SetMeshType "All" 
+          .Set "Transform", "1", "0", "0", "0", "-1.83697e-16", "1", "0", "-1", "-1.83697e-16" 
+     End With
+End With
+With MeshSettings
+     With .ItemMeshSettings ("solid$default:import_2")
+          .SetMeshType "All" 
+          .Set "Transform", "1", "0", "0", "0", "-1.83697e-16", "1", "0", "-1", "-1.83697e-16" 
+     End With
+End With
+With MeshSettings
+     With .ItemMeshSettings ("solid$default:import_3")
+          .SetMeshType "All" 
+          .Set "Transform", "1", "0", "0", "0", "-1.83697e-16", "1", "0", "-1", "-1.83697e-16" 
+     End With
+End With
+With MeshSettings
+     With .ItemMeshSettings ("solid$default:import_4")
+          .SetMeshType "All" 
+          .Set "Transform", "1", "0", "0", "0", "-1.83697e-16", "1", "0", "-1", "-1.83697e-16" 
+     End With
+End With

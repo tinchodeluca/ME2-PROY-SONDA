@@ -1,0 +1,202 @@
+20100312
+[start]hidden_objects
+[end]hidden_objects
+[start]history_fast_undo
+[start]undo_item
+[start]block_index
+3
+[end]block_index
+[start]command
+'@ transform: rotate default
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default" 
+     .Origin "Free" 
+     .Center "0", "0", "0" 
+     .Angle "-1*90", "-1*0", "-1*0" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Transform "Shape", "Rotate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+4
+[end]block_index
+[start]command
+'@ transform: rotate default
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default" 
+     .Origin "Free" 
+     .Center "0", "0", "0" 
+     .Angle "-1*180", "-1*0", "-1*0" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Transform "Shape", "Rotate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+7
+[end]block_index
+[start]command
+'@ transform: rotate default
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default" 
+     .Origin "Free" 
+     .Center "0", "0", "0" 
+     .Angle "-1*270", "-1*0", "-1*0" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Transform "Shape", "Rotate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+24
+[end]block_index
+[start]command
+'@ define port: 1
+ (undo)
+[end]command
+[start]content
+Port.Delete "1"
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+28
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+29
+[end]block_index
+[start]command
+'@ define port: 1
+ (undo)
+[end]command
+[start]content
+Port.Delete "1"
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+30
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+31
+[end]block_index
+[start]command
+'@ define port: 2
+ (undo)
+[end]command
+[start]content
+Port.Delete "2"
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[end]history_fast_undo
+[start]PortAndLumpedLabelState
+[start]ShowLabels
+1
+[end]ShowLabels
+[start]ShowLabelsShort
+1
+[end]ShowLabelsShort
+[start]ZoomDependPortLabels
+1
+[end]ZoomDependPortLabels
+[end]PortAndLumpedLabelState
+[start]adaption_criteria_store
+[end]adaption_criteria_store
+[start]diagnostic_info
+[start]import_item
+[start]file
+Sonda_v2_1.sab
+[end]file
+[start]invalid_names
+[end]invalid_names
+[end]import_item
+[start]import_item
+[start]file
+Sonda_v2_2.sab
+[end]file
+[start]invalid_names
+[end]invalid_names
+[end]import_item
+[end]diagnostic_info
