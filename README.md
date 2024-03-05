@@ -2,13 +2,10 @@
 
 Este proceso permite calcular la permitividad relativa (εᵣ) de materiales a partir de la medición de parámetros S11 con un VNA y una sonda. Se adquieren los parámetros de circuito abierto, circuito cerrado y agua destilada como referencia, y luego se miden los parámetros del material a calcular.
 
-**Revisión 01**  
-Fecha: 05/03/2024
-
-## Catedra Medidas Electrónicas II - UTN FRBA - 2023
+## Catedra Medidas Electrónicas II - UTN FRBA - 2023 - **Revisión 01**  Fecha: 05/03/2024
 - **Docente:** Henze Alejandro Martín
 - **JTP    :** Geria Juan Manuel
-### Alumnos Autores 
+### Alumnos 
 - Almude Tupac
 - De Luca Martín Alexandro
 
