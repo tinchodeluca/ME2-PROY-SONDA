@@ -11,6 +11,37 @@ Este proceso permite calcular la permitividad relativa (εᵣ) de materiales a p
 
 Se partió de trabajos de años anteriores para la misma cátedra que se encuentran [en la siguiente ruta](./01-Bibliografía/Antecedentes%20Soft/Sonda%20Open%20Ended%20-%20Antecedentes).
 
+## Contenido
+
+1. [Información General](#información-general)
+2. [Funciones Implementadas](#funciones-implementadas)
+    - [Procesamiento de archivos S1P obtenidos del VNA](#procesamiento-de-archivos-s1p-obtenidos-del-vna)
+    - [Conversión a Coordenadas Rectangulares](#conversión-a-coordenadas-rectangulares)
+    - [Conversión de parámetros S11 a Y11](#conversión-de-parámetros-s11-a-y11)
+    - [Submuestreo de S11 (SUBsample_S11)](#submuestreo-de-s11-subsamples11)
+    - [Remuestreo de S11 (Resample_S11)](#remuestreo-de-s11-resamples11)
+    - [Obtención de Constante Dieléctrica Relativa (εᵣ) del DUT en Medio Agua](#obtención-de-constante-dieléctrica-relativa-εᵣ-del-dut-en-medio-agua)
+    - [Obtención de Conductancia en Función de la Frecuencia con el Setup Calibrado](#obtención-de-conductancia-en-función-de-la-frecuencia-con-el-setup-calibrado)
+3. [Modelos Teóricos](#modelos-teóricos)
+    - [Obtención de Modelo de Debye para Agua Destilada](#obtención-de-modelo-de-debye-para-agua-destilada)
+    - [Obtención de Modelo de Constante Dieléctrica para Alcohol Etílico](#obtención-de-modelo-de-constante-dieléctrica-para-alcohol-etílico)
+    - [Obtención de Modelo de Constante Dieléctrica para Alcohol Isopropílico](#obtención-de-modelo-de-constante-dieléctrica-para-alcohol-isopropílico)
+4. [Ejemplos de Uso](#ejemplos-de-uso)
+    - [Procesamiento de Archivos S1P para Medios Específicos](#procesamiento-de-archivos-s1p-para-medios-específicos)
+    - [Obtención de Constante Dieléctrica Relativa para Diferentes Medios](#obtención-de-constante-dieléctrica-relativa-para-diferentes-medios)
+    - [Procesamiento y Estimación de Constante Dieléctrica Relativa para Resina](#procesamiento-y-estimación-de-constante-dieléctrica-relativa-para-resina)
+5. [Proceso de Clonación y Procesamiento en Python](#proceso-de-clonación-y-procesamiento-en-python)
+6. [Pasos a Seguir](#pasos-a-seguir)
+7. [Resultados](#resultados)
+    - [Imágenes de Permitividad Relativa (εᵣ)](#imágenes-de-permitividad-relativa-εᵣ)
+        - [Er_Acetona_Medido](#er_acetona_medido)
+        - [Er_agua_Teorico](#er_agua_teorico)
+        - [Er_AlchEtilico_Teorico](#er_alchetilico_teorico)
+        - [Er_AlchIsoprop_Medido](#er_alchisoprop_medido)
+        - [Er_AlchIsoprop_Teorico](#er_alchisoprop_teorico)
+        - [Er_AlchIsoprop_VS](#er_alchisoprop_vs)
+        - [Er_Resina](#er_resina)
+          
 ## Modelo de la Sonda utilizada
 
 ![Imagen de la Sonda](./03-Dise%C3%B1os/Imagenes/SONDA_SMA_2.JPG)
