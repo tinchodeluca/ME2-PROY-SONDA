@@ -56,9 +56,9 @@ El script Python ubicado en la carpeta **`05-Software`** de este repositorio uti
 Este proceso brinda una metodología ordenada y eficiente para calcular la permitividad relativa de materiales mediante una sonda, permitiendo un análisis detallado y una presentación organizada de los resultados.
 ## Modelo de la Sonda utilizada
 
-![Imagen de la Sonda](https://github.com/tinchodeluca/ME2-PROY-SONDA/blob/main/03-Dise%C3%B1os/Imagenes/SONDA_SMA_2.JPG)
+![Imagen de la Sonda](./03-Dise%C3%B1os/Imagenes/SONDA_SMA_2.JPG)
 
-Se pueden encontrar los modelos 3D de la sonda utilizada y las simulaciones en CST con dicha sonda.
+Se pueden encontrar los [modelos 3D](./03-Diseños/Sonda/) de la sonda utilizada y las simulaciones en CST con dicha sonda en la [la siguiente carpeta](./04-CST/)
 
 # Funciones implementadas
 ## Procesamiento de archivos S1P obtenidos del VNA
@@ -269,3 +269,5 @@ Estos ejemplos ilustran cómo procesar archivos S1P para diferentes medios y cal
 
 - Almude Tupac
 - De Luca Martín
+
+Se partió de trabajos de años anteriores para la misma cátedra que se encuentran [en la siguiente ruta](./01-Bibliografía/Antecedentes%20Soft/Sonda%20Open%20Ended%20-%20Antecedentes).
