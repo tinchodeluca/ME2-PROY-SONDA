@@ -221,7 +221,7 @@ er_acetona = get_er_DUTm(frecs, s11_acetona['Complex'], s11_agua_dest['Complex']
 ```
 
 #### Procesamiento y Estimación de Constante Dieléctrica Relativa para Resina
-*(utilizando un set de datos de mayor con una calibración de menor tamaño, interpolando y muestreando nuevamente)*
+*(utilizando un set de datos mayor con una calibración de menor tamaño, interpolando y muestreando nuevamente)*
 
 ```python
 file_path = './ME2-PROY-SONDA/rsc/' + '21-12-23/'
