@@ -28,7 +28,6 @@ Fecha: 05/03/2024
    - Documentar y presentar los resultados de manera clara y comprensible.
 
 Este proceso brinda una metodología ordenada y eficiente para calcular la permitividad relativa de materiales mediante una sonda, permitiendo un análisis detallado y una presentación organizada de los resultados.
-
 ## Modelo de la Sonda utilizada
 
 ![Imagen de la Sonda](https://github.com/tinchodeluca/ME2-PROY-SONDA/blob/main/03-Dise%C3%B1os/Imagenes/SONDA_SMA_2.JPG)
@@ -216,4 +215,31 @@ er_resina  = get_er_DUTm(frecs, s11_resina['Complex'], s11_agua_dest['Complex'],
 Estos ejemplos ilustran cómo procesar archivos S1P para diferentes medios y calcular la constante dieléctrica relativa en función de la frecuencia para cada medio. Además, se muestra cómo aplicar el proceso a un nuevo conjunto de datos (Resina) utilizando una función de resample para ajustar las frecuencias.
 ## Resultados
 
-![App Screenshot](https://github.com/tinchodeluca/ME2-PROY-SONDA/02-Multimedia/)
+## Imágenes de Permitividad Relativa (εᵣ)
+
+### Er_Acetona_Medido
+![Er_Acetona_Medido](https://github.com/tinchodeluca/ME2-PROY-SONDA/raw/main/02-Multimedia/Er_Acetona_Medido.png)
+
+### Er_agua_Teorico
+![Er_agua_Teorico](https://github.com/tinchodeluca/ME2-PROY-SONDA/raw/main/02-Multimedia/Er_agua_Teorico.png)
+
+### Er_AlchEtilico_Teorico
+![Er_AlchEtilico_Teorico](https://github.com/tinchodeluca/ME2-PROY-SONDA/raw/main/02-Multimedia/Er_AlchEtilico_Teorico.png)
+
+### Er_AlchIsoprop_Medido
+![Er_AlchIsoprop_Medido](https://github.com/tinchodeluca/ME2-PROY-SONDA/raw/main/02-Multimedia/Er_AlchIsoprop_Medido.png)
+
+### Er_AlchIsoprop_Teorico
+![Er_AlchIsoprop_Teorico](https://github.com/tinchodeluca/ME2-PROY-SONDA/raw/main/02-Multimedia/Er_AlchIsoprop_Teorico.png)
+
+### Er_AlchIsoprop_VS
+![Er_AlchIsoprop_VS](https://github.com/tinchodeluca/ME2-PROY-SONDA/raw/main/02-Multimedia/Er_AlchIsoprop_VS.png)
+
+### Er_Resina
+![Er_Resina](https://github.com/tinchodeluca/ME2-PROY-SONDA/raw/main/02-Multimedia/Er_Resina.png)
+
+
+## Autores 
+
+- Almude Tupac
+- De Luca Martín
