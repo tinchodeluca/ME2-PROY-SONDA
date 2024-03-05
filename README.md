@@ -90,7 +90,7 @@ La función `def S11_to_Y11(frec, S11)` convierte los parámetros S11 (coeficien
     - `'Complex'`: Valor complejo correspondiente a Y11.
 
 Estas funciones proporcionan herramientas esenciales para el procesamiento y análisis de archivos S1P obtenidos del VNA.
-### Submuestreo de S11 (SUBsample_S11)
+## Submuestreo de S11 (SUBsample_S11)
 
 La función `def SUBsample_S11(small_dict, big_dict)` realiza un submuestreo de los datos en `big_dict` para que coincidan con las frecuencias presentes en `small_dict`. La función elimina las frecuencias no presentes en `small_dict` y retorna un nuevo diccionario con el conjunto de datos ajustado.
 
@@ -110,7 +110,7 @@ La función imprimirá un mensaje si el diccionario más pequeño no tiene menos
   result_dict = SUBsample_S11(small_dict, big_dict)
   ```
 
-### Remuestreo de S11 (Resample_S11)
+## Remuestreo de S11 (Resample_S11)
 
 La función `def Resample_S11(smaller_set, data)` realiza un remuestreo de los datos en `data` para que coincidan con las frecuencias presentes en `smaller_set`. La función realiza una interpolación lineal entre los puntos de datos existentes y devuelve un nuevo conjunto de datos con las frecuencias ajustadas.
 
@@ -190,7 +190,7 @@ La función `def get_er_pat_alc_isopropilico(frecs)` devuelve el modelo de la co
     - Lista de valores numéricos que representan la constante dieléctrica relativa del alcohol isopropílico en función de la frecuencia.
 
 Estas funciones proporcionan modelos para estimar la constante dieléctrica relativa en diferentes medios, lo que puede ser útil en el análisis de parámetros de dispersión en entornos específicos.
-### Ejemplos de Uso
+## Ejemplos de Uso
 
 #### Procesamiento de Archivos S1P para Medios Específicos
 
