@@ -5,6 +5,39 @@ Este proceso permite calcular la permitividad relativa (εᵣ) de materiales a p
 **Revisión 01**  
 Fecha: 05/03/2024
 
+# Índice
+
+1. [Cálculo de Permitividad de Materiales mediante una Sonda](#cálculo-de-permitividad-de-materiales-mediante-una-sonda)
+    1. [Proceso de Clonación y Procesamiento en Python](#proceso-de-clonación-y-procesamiento-en-python)
+        1. [Descripción del Proceso](#descripción-del-proceso)
+    2. [Pasos a Seguir](#pasos-a-seguir)
+2. [Modelo de la Sonda utilizada](#modelo-de-la-sonda-utilizada)
+3. [Funciones implementadas](#funciones-implementadas)
+    1. [Procesamiento de archivos S1P obtenidos del VNA](#procesamiento-de-archivos-s1p-obtenidos-del-vna)
+    2. [Conversión a Coordenadas Rectangulares](#conversión-a-coordenadas-rectangulares)
+    3. [Conversión de parámetros S11 a Y11](#conversión-de-parámetros-s11-a-y11)
+    4. [Submuestreo de S11 (SUBsample_S11)](#submuestreo-de-s11-subsamples11)
+    5. [Remuestreo de S11 (Resample_S11)](#remuestreo-de-s11-resamples11)
+    6. [Obtener Constante Dieléctrica Relativa (εᵣ) del Dispositivo bajo Prueba (DUT) en Medio Agua](#obtener-constante-dieléctrica-relativa-εᵣ-del-dispositivo-bajo-prueba-dut-en-medio-agua)
+    7. [Obtener Conductancia en Función de la Frecuencia con el Setup Calibrado](#obtener-conductancia-en-función-de-la-frecuencia-con-el-setup-calibrado)
+4. [Modelos Teóricos](#modelos-teóricos)
+    1. [Obtener Modelo de Debye para Agua Destilada](#obtener-modelo-de-debye-para-agua-destilada)
+    2. [Obtener Modelo de Constante Dieléctrica para Alcohol Etílico](#obtener-modelo-de-constante-dieléctrica-para-alcohol-etílico)
+    3. [Obtener Modelo de Constante Dieléctrica para Alcohol Isopropílico](#obtener-modelo-de-constante-dieléctrica-para-alcohol-isopropílico)
+5. [Ejemplos de Uso](#ejemplos-de-uso)
+    1. [Procesamiento de Archivos S1P para Medios Específicos](#procesamiento-de-archivos-s1p-para-medios-específicos)
+    2. [Obtener Constante Dieléctrica Relativa para Diferentes Medios](#obtener-constante-dieléctrica-relativa-para-diferentes-medios)
+    3. [Procesamiento y Estimación de Constante Dieléctrica Relativa para Resina](#procesamiento-y-estimación-de-constante-dieléctrica-relativa-para-resina)
+6. [Resultados](#resultados)
+    1. [Imágenes de Permitividad Relativa (εᵣ)](#imágenes-de-permitividad-relativa-εᵣ)
+        1. [Er_Acetona_Medido](#er_acetona_medido)
+        2. [Er_agua_Teorico](#er_agua_teorico)
+        3. [Er_AlchEtilico_Teorico](#er_alchetilico_teorico)
+        4. [Er_AlchIsoprop_Medido](#er_alchisoprop_medido)
+        5. [Er_AlchIsoprop_Teorico](#er_alchisoprop_teorico)
+        6. [Er_AlchIsoprop_VS](#er_alchisoprop_vs)
+        7. [Er_Resina](#er_resina)
+           
 ## Proceso de Clonación y Procesamiento en Python
 
 El script Python ubicado en la carpeta **`05-Software`** de este repositorio utiliza Google Colab o Jupyter para realizar un `git clone` del repositorio y procesar los archivos, almacenándolos en una lista. El script se puede encontrar en [este archivo](./05-Software/me2_proyecto_2023.py).
