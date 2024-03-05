@@ -5,6 +5,32 @@ Este proceso permite calcular la permitividad relativa (εᵣ) de materiales a p
 **Revisión 01**  
 Fecha: 05/03/2024
 
+## Proceso de Clonación y Procesamiento en Python
+
+El script Python ubicado en la carpeta **`05-Software`** de este repositorio utiliza Google Colab o Jupyter para realizar un `git clone` del repositorio y procesar los archivos, almacenándolos en una lista. El script se puede encontrar en [este enlace](./05-Software/clonar_y_procesar.py).
+
+### Descripción del Proceso
+
+1. **Clonación del Repositorio:**
+   - El script comienza realizando un `git clone` del repositorio para obtener la última versión de los archivos.
+
+     ```python
+     !git clone https://github.com/tinchodeluca/ME2-PROY-SONDA.git
+     ```
+
+2. **Procesamiento de Archivos:**
+   - Luego, el script explora la carpeta `./ME2-PROY-SONDA/rsc/` y almacena en un diccionario la lista de archivos para cada carpeta.
+
+     ```python
+     file_path = './ME2-PROY-SONDA/rsc/'
+     files = {}
+
+     for folder in os.listdir(file_path):
+       if os.path.isdir(file_path + '/' + folder ):
+         file_names = os.listdir( file_path + '/' + folder + '/' )
+         files[folder] = file_names
+     ```
+
 ## Pasos a Seguir:
 
 1. **Medición de Parámetros de Referencia:**
