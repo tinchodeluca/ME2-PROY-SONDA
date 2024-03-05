@@ -195,17 +195,20 @@ Estas funciones proporcionan modelos para estimar la constante dieléctrica rela
 #### Procesamiento de Archivos S1P para Medios Específicos
 
 ```python
-file_path     = './ME2-PROY-SONDA/rsc/22-02-24/'
-file_name     = 'AGUA DEST.s1p'
-s11_agua_dest = vna_proc_file(file_path, file_name)
-file_name     = 'SHORT.s1p'
-s11_short     = vna_proc_file(file_path, file_name)
-file_name     = 'AIRE.s1p'
-s11_aire      = vna_proc_file(file_path, file_name)
-file_name     = 'ISOPR.s1p'
-s11_isop      = vna_proc_file(file_path, file_name)
-file_name     = 'ACETONA.s1p'
-s11_acetona   = vna_proc_file(file_path, file_name)
+mea_date = '22-02-24'
+file_path = './ME2-PROY-SONDA/rsc/' + mea_date + '/'
+
+# files[mea_date][0] #Aire
+# files[mea_date][1] #Isopropil
+# files[mea_date][2] #Agua destilada
+# files[mea_date][3] #Corto circuito
+# files[mea_date][4] #Acetona
+
+s11_agua_dest = vna_proc_file(file_path, files[mea_date][2])
+s11_short     = vna_proc_file(file_path, files[mea_date][3])
+s11_aire      = vna_proc_file(file_path, files[mea_date][0])
+s11_isop      = vna_proc_file(file_path, files[mea_date][1])
+s11_acetona   = vna_proc_file(file_path, files[mea_date][4])
 ```
 
 #### Obtener Constante Dieléctrica Relativa para Diferentes Medios
