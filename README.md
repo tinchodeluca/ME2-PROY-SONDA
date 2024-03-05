@@ -265,10 +265,12 @@ Estos ejemplos ilustran cómo procesar archivos S1P para diferentes medios y cal
 ### Er_Resina
 ![Er_Resina](https://github.com/tinchodeluca/ME2-PROY-SONDA/raw/main/02-Multimedia/Er_Resina.png)
 
-
-## Autores 
-
+## Catedra Medidas Electrónicas II
+- **Docente:** Henze Alejandro Martín
+- **JTP    :** Geria Juan Manuel
+  
+## Alumnos Autores 
 - Almude Tupac
-- De Luca Martín
+- De Luca Martín Alexandro
 
 Se partió de trabajos de años anteriores para la misma cátedra que se encuentran [en la siguiente ruta](./01-Bibliografía/Antecedentes%20Soft/Sonda%20Open%20Ended%20-%20Antecedentes).
