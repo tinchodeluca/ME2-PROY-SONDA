@@ -74,6 +74,7 @@ La función `def vna_proc_file(file_path, file_name)` se encarga de procesar los
     - `'Index':` Encabezados de las columnas de datos.
     - `'Frec':` Lista de frecuencias extraídas del archivo.
     - `'Complex':` Lista de números complejos correspondientes a los datos procesados.
+
 Si el archivo tiene extensión `.csv`, la función imprimirá un mensaje indicando que el formato CSV no está soportado y retornará sin procesar el archivo.
 
 ## Conversión a Coordenadas Rectangulares
