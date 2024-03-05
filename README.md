@@ -13,7 +13,7 @@ Se partió de trabajos de años anteriores para la misma cátedra que se encuent
 
 ## Contenido
 
-1. [Información General](#información-general)
+1. [Modelo de Sonda](#modelo-de-la-sonda-utilizada)
 2. [Funciones Implementadas](#funciones-implementadas)
     - [Procesamiento de archivos S1P obtenidos del VNA](#procesamiento-de-archivos-s1p-obtenidos-del-vna)
     - [Conversión a Coordenadas Rectangulares](#conversión-a-coordenadas-rectangulares)
