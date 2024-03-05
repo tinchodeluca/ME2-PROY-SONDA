@@ -31,8 +31,10 @@ Este proceso brinda una metodología ordenada y eficiente para calcular la permi
 
 ## Modelo de la Sonda utilizada
 
-![App Screenshot](https://github.com/tinchodeluca/ME2-PROY-SONDA/03-Diseños/Imagenes/SONDA_SMA_2.JPG)
-Se pueden encontrar los modelos 3D de la sonda utilizada y las simulaciones en CST con dicha sonda
+![Imagen de la Sonda](https://github.com/tinchodeluca/ME2-PROY-SONDA/blob/main/03-Dise%C3%B1os/Imagenes/SONDA_SMA_2.JPG)
+
+Se pueden encontrar los modelos 3D de la sonda utilizada y las simulaciones en CST con dicha sonda.
+
 # Funciones implementadas
 ## Procesamiento de archivos S1P obtenidos del VNA
 La función `def vna_proc_file(file_path, file_name)` se encarga de procesar los archivos seleccionados y devuelve un diccionario con la información extraída. Los archivos S1P pueden estar en formato de Modulo y Fase o Parte Real e Imaginaria, dependiendo del modo de adquisición del VNA.
