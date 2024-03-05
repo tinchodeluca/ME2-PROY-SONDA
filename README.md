@@ -268,8 +268,7 @@ Estos ejemplos ilustran cómo procesar archivos S1P para diferentes medios y cal
 ## Catedra Medidas Electrónicas II
 - **Docente:** Henze Alejandro Martín
 - **JTP    :** Geria Juan Manuel
-  
-## Alumnos Autores 
+### Alumnos Autores 
 - Almude Tupac
 - De Luca Martín Alexandro
 
