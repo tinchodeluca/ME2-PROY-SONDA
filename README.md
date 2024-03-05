@@ -7,7 +7,7 @@ Fecha: 05/03/2024
 
 ## Proceso de Clonación y Procesamiento en Python
 
-El script Python ubicado en la carpeta **`05-Software`** de este repositorio utiliza Google Colab o Jupyter para realizar un `git clone` del repositorio y procesar los archivos, almacenándolos en una lista. El script se puede encontrar en [este enlace](./05-Software/clonar_y_procesar.py).
+El script Python ubicado en la carpeta **`05-Software`** de este repositorio utiliza Google Colab o Jupyter para realizar un `git clone` del repositorio y procesar los archivos, almacenándolos en una lista. El script se puede encontrar en [este archivo](./05-Software/me2_proyecto_2023.py).
 
 ### Descripción del Proceso
 
