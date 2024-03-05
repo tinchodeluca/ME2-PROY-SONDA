@@ -5,88 +5,15 @@ Este proceso permite calcular la permitividad relativa (εᵣ) de materiales a p
 **Revisión 01**  
 Fecha: 05/03/2024
 
-# Índice
+## Catedra Medidas Electrónicas II - UTN FRBA - 2023
+- **Docente:** Henze Alejandro Martín
+- **JTP    :** Geria Juan Manuel
+### Alumnos Autores 
+- Almude Tupac
+- De Luca Martín Alexandro
 
-1. [Cálculo de Permitividad de Materiales mediante una Sonda](#cálculo-de-permitividad-de-materiales-mediante-una-sonda)
-    1. [Proceso de Clonación y Procesamiento en Python](#proceso-de-clonación-y-procesamiento-en-python)
-        1. [Descripción del Proceso](#descripción-del-proceso)
-    2. [Pasos a Seguir](#pasos-a-seguir)
-2. [Modelo de la Sonda utilizada](#modelo-de-la-sonda-utilizada)
-3. [Funciones implementadas](#funciones-implementadas)
-    1. [Procesamiento de archivos S1P obtenidos del VNA](#procesamiento-de-archivos-s1p-obtenidos-del-vna)
-    2. [Conversión a Coordenadas Rectangulares](#conversión-a-coordenadas-rectangulares)
-    3. [Conversión de parámetros S11 a Y11](#conversión-de-parámetros-s11-a-y11)
-    4. [Submuestreo de S11 (SUBsample_S11)](#submuestreo-de-s11-subsamples11)
-    5. [Remuestreo de S11 (Resample_S11)](#remuestreo-de-s11-resamples11)
-    6. [Obtener Constante Dieléctrica Relativa (εᵣ) del Dispositivo bajo Prueba (DUT) en Medio Agua](#obtener-constante-dieléctrica-relativa-εᵣ-del-dispositivo-bajo-prueba-dut-en-medio-agua)
-    7. [Obtener Conductancia en Función de la Frecuencia con el Setup Calibrado](#obtener-conductancia-en-función-de-la-frecuencia-con-el-setup-calibrado)
-4. [Modelos Teóricos](#modelos-teóricos)
-    1. [Obtener Modelo de Debye para Agua Destilada](#obtener-modelo-de-debye-para-agua-destilada)
-    2. [Obtener Modelo de Constante Dieléctrica para Alcohol Etílico](#obtener-modelo-de-constante-dieléctrica-para-alcohol-etílico)
-    3. [Obtener Modelo de Constante Dieléctrica para Alcohol Isopropílico](#obtener-modelo-de-constante-dieléctrica-para-alcohol-isopropílico)
-5. [Ejemplos de Uso](#ejemplos-de-uso)
-    1. [Procesamiento de Archivos S1P para Medios Específicos](#procesamiento-de-archivos-s1p-para-medios-específicos)
-    2. [Obtener Constante Dieléctrica Relativa para Diferentes Medios](#obtener-constante-dieléctrica-relativa-para-diferentes-medios)
-    3. [Procesamiento y Estimación de Constante Dieléctrica Relativa para Resina](#procesamiento-y-estimación-de-constante-dieléctrica-relativa-para-resina)
-6. [Resultados](#resultados)
-    1. [Imágenes de Permitividad Relativa (εᵣ)](#imágenes-de-permitividad-relativa-εᵣ)
-        1. [Er_Acetona_Medido](#er_acetona_medido)
-        2. [Er_agua_Teorico](#er_agua_teorico)
-        3. [Er_AlchEtilico_Teorico](#er_alchetilico_teorico)
-        4. [Er_AlchIsoprop_Medido](#er_alchisoprop_medido)
-        5. [Er_AlchIsoprop_Teorico](#er_alchisoprop_teorico)
-        6. [Er_AlchIsoprop_VS](#er_alchisoprop_vs)
-        7. [Er_Resina](#er_resina)
-           
-## Proceso de Clonación y Procesamiento en Python
+Se partió de trabajos de años anteriores para la misma cátedra que se encuentran [en la siguiente ruta](./01-Bibliografía/Antecedentes%20Soft/Sonda%20Open%20Ended%20-%20Antecedentes).
 
-El script Python ubicado en la carpeta **`05-Software`** de este repositorio utiliza Google Colab o Jupyter para realizar un `git clone` del repositorio y procesar los archivos, almacenándolos en una lista. El script se puede encontrar en [este archivo](./05-Software/me2_proyecto_2023.py).
-
-### Descripción del Proceso
-
-1. **Clonación del Repositorio:**
-   - El script comienza realizando un `git clone` del repositorio para obtener la última versión de los archivos.
-
-     ```python
-     !git clone https://github.com/tinchodeluca/ME2-PROY-SONDA.git
-     ```
-
-2. **Procesamiento de Archivos:**
-   - Luego, el script explora la carpeta `./ME2-PROY-SONDA/rsc/` y almacena en un diccionario la lista de archivos para cada carpeta.
-
-     ```python
-     file_path = './ME2-PROY-SONDA/rsc/'
-     files = {}
-
-     for folder in os.listdir(file_path):
-       if os.path.isdir(file_path + '/' + folder ):
-         file_names = os.listdir( file_path + '/' + folder + '/' )
-         files[folder] = file_names
-     ```
-
-## Pasos a Seguir:
-
-1. **Medición de Parámetros de Referencia:**
-   - Medir y almacenar los parámetros S11 del **circuito abierto**.
-   - Medir y almacenar los parámetros S11 del **circuito cerrado**.
-   - Medir y almacenar los parámetros S11 del **agua destilada**.
-
-2. **Procesamiento de Datos de Referencia:**
-   - Procesar los archivos S1P de los parámetros medidos para obtener información estructurada.
-   - Calcular la constante dieléctrica relativa (εᵣ) para el **circuito abierto**, el **circuito cerrado** y el **agua destilada** utilizando las funciones implementadas.
-
-3. **Medición de Parámetros del Material a Calcular:**
-   - Medir y almacenar los parámetros S11 del material cuya permitividad se desea calcular.
-
-4. **Procesamiento de Datos del Material a Calcular:**
-   - Procesar el archivo S1P del material para obtener información estructurada.
-   - Calcular la constante dieléctrica relativa (εᵣ) del material utilizando las funciones implementadas.
-
-5. **Resultados y Análisis:**
-   - Analizar los resultados obtenidos para determinar la permitividad relativa del material en función de la frecuencia.
-   - Documentar y presentar los resultados de manera clara y comprensible.
-
-Este proceso brinda una metodología ordenada y eficiente para calcular la permitividad relativa de materiales mediante una sonda, permitiendo un análisis detallado y una presentación organizada de los resultados.
 ## Modelo de la Sonda utilizada
 
 ![Imagen de la Sonda](./03-Dise%C3%B1os/Imagenes/SONDA_SMA_2.JPG)
@@ -273,6 +200,56 @@ er_resina  = get_er_DUTm(frecs, s11_resina['Complex'], s11_agua_dest['Complex'],
 ```
 
 Estos ejemplos ilustran cómo procesar archivos S1P para diferentes medios y calcular la constante dieléctrica relativa en función de la frecuencia para cada medio. Además, se muestra cómo aplicar el proceso a un nuevo conjunto de datos (Resina) utilizando una función de resample para ajustar las frecuencias.
+## Proceso de Clonación y Procesamiento en Python
+
+El script Python ubicado en la carpeta **`05-Software`** de este repositorio utiliza Google Colab o Jupyter para realizar un `git clone` del repositorio y procesar los archivos, almacenándolos en una lista. El script se puede encontrar en [este archivo](./05-Software/me2_proyecto_2023.py).
+
+### Descripción del Proceso
+
+1. **Clonación del Repositorio:**
+   - El script comienza realizando un `git clone` del repositorio para obtener la última versión de los archivos.
+
+     ```python
+     !git clone https://github.com/tinchodeluca/ME2-PROY-SONDA.git
+     ```
+
+2. **Procesamiento de Archivos:**
+   - Luego, el script explora la carpeta `./ME2-PROY-SONDA/rsc/` y almacena en un diccionario la lista de archivos para cada carpeta.
+
+     ```python
+     file_path = './ME2-PROY-SONDA/rsc/'
+     files = {}
+
+     for folder in os.listdir(file_path):
+       if os.path.isdir(file_path + '/' + folder ):
+         file_names = os.listdir( file_path + '/' + folder + '/' )
+         files[folder] = file_names
+     ```
+## Pasos a Seguir:
+
+1. **Medición de Parámetros de Referencia:**
+   - Medir y almacenar los parámetros S11 del **circuito abierto**.
+   - Medir y almacenar los parámetros S11 del **circuito cerrado**.
+   - Medir y almacenar los parámetros S11 del **agua destilada**.
+
+2. **Procesamiento de Datos de Referencia:**
+   - Procesar los archivos S1P de los parámetros medidos para obtener información estructurada.
+   - Calcular la constante dieléctrica relativa (εᵣ) para el **circuito abierto**, el **circuito cerrado** y el **agua destilada** utilizando las funciones implementadas.
+
+3. **Medición de Parámetros del Material a Calcular:**
+   - Medir y almacenar los parámetros S11 del material cuya permitividad se desea calcular.
+
+4. **Procesamiento de Datos del Material a Calcular:**
+   - Procesar el archivo S1P del material para obtener información estructurada.
+   - Calcular la constante dieléctrica relativa (εᵣ) del material utilizando las funciones implementadas.
+
+5. **Resultados y Análisis:**
+   - Analizar los resultados obtenidos para determinar la permitividad relativa del material en función de la frecuencia.
+   - Documentar y presentar los resultados de manera clara y comprensible.
+
+Este proceso brinda una metodología ordenada y eficiente para calcular la permitividad relativa de materiales mediante una sonda, permitiendo un análisis detallado y una presentación organizada de los resultados.
+
+
 ## Resultados
 
 ## Imágenes de Permitividad Relativa (εᵣ)
@@ -297,12 +274,3 @@ Estos ejemplos ilustran cómo procesar archivos S1P para diferentes medios y cal
 
 ### Er_Resina
 ![Er_Resina](https://github.com/tinchodeluca/ME2-PROY-SONDA/raw/main/02-Multimedia/Er_Resina.png)
-
-## Catedra Medidas Electrónicas II - UTN FRBA - 2023
-- **Docente:** Henze Alejandro Martín
-- **JTP    :** Geria Juan Manuel
-### Alumnos Autores 
-- Almude Tupac
-- De Luca Martín Alexandro
-
-Se partió de trabajos de años anteriores para la misma cátedra que se encuentran [en la siguiente ruta](./01-Bibliografía/Antecedentes%20Soft/Sonda%20Open%20Ended%20-%20Antecedentes).
