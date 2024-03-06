@@ -234,7 +234,7 @@ er_resina  = get_er_DUTm(frecs, s11_resina['Complex'], s11_agua_dest['Complex'],
 Estos ejemplos ilustran cómo procesar archivos S1P para diferentes medios y calcular la constante dieléctrica relativa en función de la frecuencia para cada medio. Además, se muestra cómo aplicar el proceso a un nuevo conjunto de datos (Resina) utilizando una función de resample para ajustar las frecuencias.
 ## Proceso de Clonación y Procesamiento en Python
 
-El script Python ubicado en la carpeta **`05-Software`** de este repositorio utiliza Google Colab o Jupyter para realizar un `git clone` del repositorio y procesar los archivos, almacenándolos en una lista. El script se puede encontrar en [este archivo](./05-Software/me2_proyecto_2023.py).
+El script Python ubicado en la carpeta **`05-Software`** de este repositorio utiliza Google Colab o Jupyter para realizar un `git clone` del repositorio y procesar los archivos, almacenándolos en una lista. El script se puede encontrar en [este archivo](./05-Software/ME2_PROYECTO_2023.ipynb).
 
 ### Descripción del Proceso
 
