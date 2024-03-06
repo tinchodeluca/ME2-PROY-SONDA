@@ -248,6 +248,8 @@ El script Python ubicado en la carpeta **`05-Software`** de este repositorio uti
 2. **Procesamiento de Archivos:**
    - Luego, el script explora la carpeta `./ME2-PROY-SONDA/rsc/` y almacena en un diccionario la lista de archivos para cada carpeta.
 
+     *_([la carpeta recursos `rsc`](./rsc/) almacena carpetas con la fecha de medición y dentro de cada una las señales adquiridas oportunamente)_*
+
      ```python
      file_path = './ME2-PROY-SONDA/rsc/'
      files = {}
@@ -270,6 +272,7 @@ El script Python ubicado en la carpeta **`05-Software`** de este repositorio uti
 
 3. **Medición de Parámetros del Material a Calcular:**
    - Medir y almacenar los parámetros S11 del material cuya permitividad se desea calcular.
+   - Almacenar los documentos en la [carpeta de recursos](./rsc/) junto con el resto de señales.
 
 4. **Procesamiento de Datos del Material a Calcular:**
    - Procesar el archivo S1P del material para obtener información estructurada.
