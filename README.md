@@ -1,16 +1,17 @@
 # Cálculo de Permitividad de Materiales mediante una Sonda
 
 Este proceso permite calcular la permitividad relativa (εᵣ) de materiales a partir de la medición de parámetros S11 con un VNA y una sonda. Se adquieren los parámetros de circuito abierto, circuito cerrado y agua destilada como referencia, y luego se miden los parámetros del material a calcular.
-
-## Catedra Medidas Electrónicas II - UTN FRBA - 2023 - ##### **Revisión 01**  Fecha: 05/03/2024
+___
+## Catedra Medidas Electrónicas II - UTN FRBA - 2023 -
+>>**Revisión 01**  Fecha: 05/03/2024
+***
 - **Docente:** Henze Alejandro Martín
 - **JTP    :** Geria Juan Manuel
 ### Alumnos 
 - Almude Tupac
 - De Luca Martín Alexandro
-
 Se partió de trabajos de años anteriores para la misma cátedra que se encuentran [en la siguiente ruta](./01-Bibliografía/Antecedentes%20Soft/Sonda%20Open%20Ended%20-%20Antecedentes).
-
+___
 ## Contenido
 
 1. [Modelo de Sonda](#modelo-de-la-sonda-utilizada)
@@ -41,13 +42,13 @@ Se partió de trabajos de años anteriores para la misma cátedra que se encuent
         - [Er_AlchIsoprop_Teorico](#er_alchisoprop_teorico)
         - [Er_AlchIsoprop_VS](#er_alchisoprop_vs)
         - [Er_Resina](#er_resina)
-          
+___
 ## Modelo de la Sonda utilizada
 
 ![Imagen de la Sonda](./03-Dise%C3%B1os/Imagenes/SONDA_SMA_2.JPG)
 
 Se pueden encontrar los [modelos 3D](./03-Diseños/Sonda/) de la sonda utilizada y las simulaciones en CST con dicha sonda en la [la siguiente carpeta](./04-CST/)
-
+***
 # Funciones implementadas
 ## Procesamiento de archivos S1P obtenidos del VNA
 La función `def vna_proc_file(file_path, file_name)` se encarga de procesar los archivos seleccionados y devuelve un diccionario con la información extraída. Los archivos S1P pueden estar en formato de Modulo y Fase o Parte Real e Imaginaria, dependiendo del modo de adquisición del VNA.
