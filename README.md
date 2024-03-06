@@ -10,6 +10,7 @@ ___
 ### Alumnos 
 - Almude Tupac
 - De Luca Martín Alexandro
+  
 Se partió de trabajos de años anteriores para la misma cátedra que se encuentran [en la siguiente ruta](./01-Bibliografía/Antecedentes%20Soft/Sonda%20Open%20Ended%20-%20Antecedentes).
 ___
 ## Contenido
