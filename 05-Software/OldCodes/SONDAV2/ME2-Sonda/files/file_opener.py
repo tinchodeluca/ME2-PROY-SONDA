@@ -19,7 +19,7 @@ def open_file(directory, filename):
         print(f"Error reading file '{filename}': {e}")
     return None
 
-def list_snp_files(directory):
+def list_vna_files(directory):
     """List all .s1p, .s2p, .s3p, .s4p and .csv files in the given directory."""
     snp_files = [f for f in os.listdir(directory) if f.lower().endswith(('.s1p', '.s2p', '.s3p', '.s4p', '.csv'))]
     return snp_files
@@ -29,7 +29,7 @@ if __name__ == "__main__":
     directory = "rsc/"
     
     # List all SNP files in the directory
-    snp_files = list_snp_files(directory)
+    snp_files = list_vna_files(directory)
     print("SNP files in the directory:")
     for file in snp_files:
         print(file)
@@ -37,7 +37,7 @@ if __name__ == "__main__":
     # Open a specific file
     if snp_files:
         filename = snp_files[0]  # Open the first SNP file found
-        content = open_file(directory, filename)
+        content  = open_file(directory, filename)
         if content:
             print("File content preview:")
             print(content[:200] + "...")  # Print first 200 characters

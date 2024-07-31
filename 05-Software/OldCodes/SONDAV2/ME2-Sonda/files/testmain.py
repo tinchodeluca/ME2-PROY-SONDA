@@ -4,7 +4,7 @@ Created on 17 jul. 2024
 @author: mdelu
 '''
 
-from files.file_opener import open_file, list_snp_files
+from files.file_opener import open_file, list_vna_files
 from files.checksum_validator import check_file_checksum
 from files.SNP_parser import parse_file, parse_snp_file, print_file_info  # Assuming you've put your parsing logic in a separate file
 
@@ -20,7 +20,7 @@ def process_snp_file(directory, filename):
 if __name__ == "__main__":
     directory = "rsc/"
     
-    snp_files = list_snp_files(directory)
+    snp_files = list_vna_files(directory)
     for filename in snp_files:
         print(f"\nProcessing file: {filename}")
         process_snp_file(directory, filename)
